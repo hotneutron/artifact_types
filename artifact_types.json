@@ -1,0 +1,81 @@
+{
+  "_doc": "Shared artifact-type registry \u2014 the single source of truth for the type vocabulary. Parallax daemon reads this for tier classification. Doc-provenance validators validate against this set. Adding a type here registers it in both systems. Amendments: proposal \u2192 independent review \u2192 bilateral agreement \u2192 version bump.",
+  "version": "1.1",
+  "types": {
+    "reaction": {
+      "description": "Cross-team observation, addressed to us",
+      "default_tier": 1,
+      "default_authority": "derived"
+    },
+    "cross_check": {
+      "description": "Cross-team reconciliation",
+      "default_tier": 1,
+      "default_authority": "derived"
+    },
+    "proposal": {
+      "description": "Cross-team offer demanding a response",
+      "default_tier": 1,
+      "default_authority": "derived"
+    },
+    "findings": {
+      "description": "Measurement or exercise with reproducible method",
+      "default_tier": 2,
+      "default_authority": "structured"
+    },
+    "plan": {
+      "description": "Forward design / roadmap, informational",
+      "default_tier": 2,
+      "default_authority": "derived"
+    },
+    "schema_plan": {
+      "description": "Schema change design",
+      "default_tier": 2,
+      "default_authority": "derived"
+    },
+    "brainstorm": {
+      "description": "Hypothesis under exploration, optional context",
+      "default_tier": 3,
+      "default_authority": "speculative"
+    },
+    "backlog": {
+      "description": "Development queue / prioritised items",
+      "default_tier": 3,
+      "default_authority": "structured"
+    },
+    "reflection": {
+      "description": "Internal session conclusions",
+      "default_tier": 4,
+      "default_authority": "structured"
+    },
+    "report": {
+      "description": "Read-only summary",
+      "default_tier": 4,
+      "default_authority": "derived"
+    },
+    "domain_extension": {
+      "description": "Domain-specific extension, not yet promoted",
+      "default_tier": 3,
+      "default_authority": "speculative"
+    },
+    "strategy": {
+      "description": "Strategy document",
+      "default_tier": 3,
+      "default_authority": "speculative"
+    },
+    "exercise_step": {
+      "description": "Exercise step output",
+      "default_tier": 3,
+      "default_authority": "structured"
+    },
+    "exercise_plan": {
+      "description": "Exercise design",
+      "default_tier": 3,
+      "default_authority": "structured"
+    },
+    "methodology": {
+      "description": "Executable specification layer (SKILL.md/program)",
+      "default_tier": 1,
+      "default_authority": "structured"
+    }
+  }
+}
