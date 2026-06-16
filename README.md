@@ -1,8 +1,9 @@
 # artifact_types — Shared Type Registry
 
-Single source of truth for the artifact-type vocabulary used by both the
-parallax daemon (tier classification) and the doc-provenance module
-(authority validation).
+Single source of truth for the artifact-type vocabulary. The **consumer repo** mounts it
+once (as a submodule) and points both of its tools at it: the **parallax** daemon (tier
+classification) and the **warrant** checker (authority validation). One registry, three
+consumers, no drift.
 
 ## Purpose
 
