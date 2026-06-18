@@ -1,6 +1,6 @@
 {
-  "_doc": "Shared artifact-type registry \u2014 the single source of truth for the type vocabulary. Parallax daemon reads this for tier classification. Doc-provenance validators validate against this set. Adding a type here registers it in both systems. Amendments: proposal \u2192 independent review \u2192 bilateral agreement \u2192 version bump.",
-  "version": "1.1",
+  "_doc": "Shared artifact-type registry — the single source of truth for the type vocabulary. Parallax daemon reads this for tier classification. Doc-provenance validators validate against this set. Adding a type here registers it in both systems. Amendments: proposal → independent review → bilateral agreement → version bump.",
+  "version": "1.2",
   "types": {
     "reaction": {
       "description": "Cross-team observation, addressed to us",
@@ -76,6 +76,23 @@
       "description": "Executable specification layer (SKILL.md/program)",
       "default_tier": 1,
       "default_authority": "structured"
+    }
+  },
+  "evidence_axis": {
+    "_doc": "Shared evidence-tier scale for findings_index (rung 2). Orthogonal to the authority axis above — evidence describes how a CLAIM is grounded, not what KIND of document states it. Non-overlapping terms: measured/inferred/conjectural (avoids collision with authority's derived/speculative).",
+    "tiers": {
+      "measured": {
+        "description": "Reproducible measurement — the claim is backed by a runner, experiment, or exercise output",
+        "order": 1
+      },
+      "inferred": {
+        "description": "Derived from measurement — the claim reasons from measured data but is not itself a direct measurement",
+        "order": 2
+      },
+      "conjectural": {
+        "description": "Hypothesis, not yet grounded — the claim is proposed but not yet measured",
+        "order": 3
+      }
     }
   }
 }
