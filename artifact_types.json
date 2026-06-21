@@ -79,7 +79,7 @@
     }
   },
   "evidence_axis": {
-    "_doc": "Shared evidence-tier scale for findings_index (rung 2). Orthogonal to the authority axis above — evidence describes how a CLAIM is grounded, not what KIND of document states it. Non-overlapping terms: measured/inferred/conjectural (avoids collision with authority's derived/speculative).",
+    "_doc": "Shared evidence-tier scale for claims_index (rung 2). Orthogonal to the authority axis above — evidence describes how a CLAIM is grounded, not what KIND of document states it. Non-overlapping terms: measured/inferred/conjectural (avoids collision with authority's derived/speculative).",
     "tiers": {
       "measured": {
         "description": "Reproducible measurement — the claim is backed by a runner, experiment, or exercise output",
