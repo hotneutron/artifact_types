@@ -1,6 +1,6 @@
 {
   "_doc": "Shared artifact-type registry — the single source of truth for the type vocabulary. Parallax daemon reads this for tier classification. Doc-provenance validators validate against this set. Adding a type here registers it in both systems. Amendments: proposal → independent review → bilateral agreement → version bump.",
-  "version": "1.2",
+  "version": "1.3",
   "types": {
     "reaction": {
       "description": "Cross-team observation, addressed to us",
@@ -76,6 +76,11 @@
       "description": "Executable specification layer (SKILL.md/program)",
       "default_tier": 1,
       "default_authority": "structured"
+    },
+    "study": {
+      "description": "Systematic synthesis of external references for internal use",
+      "default_tier": 3,
+      "default_authority": "derived"
     }
   },
   "evidence_axis": {
